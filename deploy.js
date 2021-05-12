@@ -1,11 +1,12 @@
+require("dotenv").config();
 const HDWalletProvider = require("truffle-hdwallet-provider");
 const Web3 = require("web3");
 const { interface, bytecode } = require("./compile");
 
-const provider = new HDWalletProvider(
-	"gallery omit diamond mandate release ridge seed visit elbow organ fan together",
-	"https://rinkeby.infura.io/v3/9f58bc53ac4248fcba58af4a2b6f7ff4"
-);
+const mnemonic = process.env.MNEMONIC;
+const apiKey = process.env.API_KEY;
+
+const provider = new HDWalletProvider(mnemonic, apiKey);
 
 const web3 = new Web3(provider);
 
