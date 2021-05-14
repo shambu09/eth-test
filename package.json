@@ -6,8 +6,8 @@
   "scripts": {
     "test": "mocha"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Shambu Valasang",
+  "license": "MIT",
   "dependencies": {
     "dotenv": "^9.0.2",
     "ganache-cli": "^6.12.2",
